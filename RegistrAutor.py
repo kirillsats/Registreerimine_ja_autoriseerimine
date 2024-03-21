@@ -1,4 +1,7 @@
 from modulRegistrAutor import *
+login = []
+kasuataja_samasajas = []
+parool = []
 
 
 kasuataja_samasajas = None
