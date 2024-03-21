@@ -1,37 +1,19 @@
-# def kirjuta_failisse(fail: str, login_password_list: list):
-#     """ Selline funktsioon kirjutab andmed failisse
-#     :param str fail: Faili nimi, kus salvestatakse andmed
-#     :param list  login_password_list: Jarjend, kus loginid ja parooolid
-#     :rtype: list
-#     """
-#     failname = "log_pass.txt"
-#
-#     with open(fail, "w", encoding="utf-8") as f:  # Открывает файл для создания или перезаписи записей
-#         log_to_str = ",".join(login_password_list[0])
-#         f.write(log_to_str)
-#         f.write("\n")
-#         pass_to_str = ",".join(login_password_list[1])
-#         f.write(pass_to_str)
-
-
-def kirjuta_failisse(kasutajanimi,email, parool):
+def kirjuta_failisse(fail: str, login_password_list: list):
+    """ Selline funktsioon kirjutab andmed failisse
+    :param str fail: Faili nimi, kus salvestatakse andmed
+    :param list  login_password_list: Jarjend, kus loginid ja parooolid
+    :rtype: list
     """
+    failname = "log_pass.txt"
 
-    :param kasutajanimi:
-    :param email:
-    :param parool:
-    :return:
-    """
-    failname="kasutajateandmed.txt"
-    try:
-        f=open(failname, 'w',
-        ,encoding="utf-8")
-    for i in rangellen(kasutajanimi)):
-        e=email[i]
-        k=kasutajanimi[i]
-        p=paroolli
-        f.writeff"(k}{e}{p}"+"\n")
-    except: "Viga"
+    with open(fail, "w", encoding="utf-8") as f:  # Открывает файл для создания или перезаписи записей
+        log_to_str = ",".join(login_password_list[0])
+        f.write(log_to_str)
+        f.write("\n")
+        pass_to_str = ",".join(login_password_list[1])
+        f.write(pass_to_str)
+
+
 
 
 def lisamine_failisse(fail: str, login,parool:str):
@@ -41,6 +23,7 @@ def lisamine_failisse(fail: str, login,parool:str):
     :param str parool:
     :rtype: list
     """
+    failname = "log_pass.txt"
     with open(fail, "r", encoding="utf-8") as f: #открывает файл в режиме чтения
         rida = f.readrida()
         logins_parools = [login,parool]
